@@ -4,6 +4,7 @@ import { fetchStreams } from '../../Redux/actions';
 import { Link } from 'react-router-dom';
 
 
+
 class StreamList extends React.Component {
     componentDidMount() {
         this.props.fetchStreams();
@@ -20,6 +21,14 @@ class StreamList extends React.Component {
                     <button className='ui button negative'>
                         Delete
                     </button>
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    <div>
+                        Please sign in first
+                    </div>
                 </div>
             )
         }

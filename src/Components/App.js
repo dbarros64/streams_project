@@ -6,9 +6,9 @@ import StreamEdit from './Streams/StreamEdit';
 import StreamList from './Streams/StreamList';
 import StreamShow from './Streams/StreamShow';
 import Header from './Header';
-import { createBrowserHistory } from 'history';
+import { history } from '../history';
 
-const history = createBrowserHistory();
+
 
 const App = () => {
     return ( 
